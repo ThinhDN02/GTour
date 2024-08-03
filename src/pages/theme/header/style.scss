@@ -1,0 +1,95 @@
+*{
+   // font-size: 13px;
+}
+header{
+    width:100%;
+    position: fixed; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    float: left;
+    padding: 10px 10%;
+    padding-right: 0px;
+}
+header .logo img{
+    width: 100px;
+    height: auto;
+}
+.nav .menu{
+    margin-left: 200px;
+}
+.nav ul{
+    border-radius: 10px;
+    list-style: none;
+    padding: 0;
+}
+.nav ul li{
+    position: relative;
+    float: left;
+}
+.nav ul li a{
+    font-weight: bold;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+.nav ul li a:hover{
+    //color: #000;
+}
+.nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    display: none;
+}
+.nav ul li ul li a{
+    font-weight: normal;
+    color: #000;
+    padding: 10px;
+}
+.nav ul li ul li a:hover{
+    color: #ff0000;
+}
+.nav ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.nav ul li ul li ul{
+    margin-top: -1px;
+    left: 201px;
+    top:0;
+}
+.nav ul li:hover > ul{
+    display: initial;
+}
+.toggle_btn{
+    padding: 20px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+.toggle_btn1{
+    padding: 20px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 1100px) {
+    .nav .toggle_btn1{
+        display: initial;
+        float: right;
+    }
+    .nav ul{
+        display: none;
+    }
+}
